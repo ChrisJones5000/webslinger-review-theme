@@ -1,0 +1,12 @@
+.testing {
+	&__title {
+		color: $primary-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-flow: gsdfgdf;
+		linear-gradient: ($primary-color, , 50%);
+		transform: translateX(25%);
+	}
+}
