@@ -1,12 +1,29 @@
-.testing {
-	&__title {
-		color: $primary-color;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		flex-flow: gsdfgdf;
-		linear-gradient: ($primary-color, , 50%);
-		transform: translateX(25%);
-	}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	/**Font Size = Desired font size (10px)/current font size (16px)**/
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	line-height: 1.7;
+	font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font-family;
+	font-size: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }

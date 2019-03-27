@@ -1,1 +1,16 @@
-$primary-color: #F00;
+/**
+ * Font Variables
+ */
+
+$base-font-family: Lato, sans-serif;
+$heading-font-family: 'Playfair Display', serif;
+
+/**
+ * Color Variables
+ */
+
+$color-black-primary: #1E1E24;
+$color-red-primary: #92140C;
+$color-white-primary: #FFF8F0;
+$color-peach-primary: #FFCF99;
+$color-blue-primary: #111D4A;

@@ -349,16 +349,68 @@ template {
   display: none;
 }
 
+/**
+ * Font Variables
+ */
+
+/**
+ * Color Variables
+ */
+
 /**Testing*/
 
-.testing__title {
-		color: #F00;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	/**Font Size = Desired font size (10px)/current font size (16px)**/
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	line-height: 1.7;
+	font-family: Lato, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-size: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header__logo {
+		max-width: 25rem;
+		margin: 2rem auto 0;
+	}
+
+.header__logo-image {
+			display: block;
+		}
+
+.header__nav {
+		padding: 2rem 0;
+	}
+
+.header__nav-list {
 		text-align: center;
-		flex-flow: gsdfgdf;
-		linear-gradient: (#F00, , 50%);
-		-webkit-transform: translateX(25%);
-		        transform: translateX(25%);
+	}
+
+.header__nav-item {
+		display: inline-block;
+	}
+
+.header__nav-item-link {
+		text-decoration: none;
+		padding: 1rem 2rem;
 	}
