@@ -3,3 +3,9 @@
 @import 'base/_mixins';
 @import 'base/_global';
 @import 'modules/_header';
+@import 'modules/_main-content';
+@import 'modules/_containers';
+@import 'modules/_featured-recent-section';
+@import 'modules/_featured-post';
+@import 'modules/_recent-articles';
+@import 'modules/_footer';

@@ -1,28 +1,41 @@
 .header {
 
 	&__logo {
-		max-width: 25rem;
-		margin: 2rem auto 0;
+		/*max-width: 25rem;*/
+		margin: 1.5rem auto;
 
 		&-image {
 			display: block;
+			max-width: 25rem;
 		}
 	}
 
 	&__nav {
-		padding: 2rem 0;
+		background-color: $color-blue-primary;
 	}
 
 	&__nav-list {
-		text-align: center;
+		
 	}
 
 	&__nav-item {
 		display: inline-block;
 	}
 
+	&__nav-icon {
+		margin-right: 1rem;
+	}
+
 	&__nav-item-link {
+		color: $color-white-primary;
 		text-decoration: none;
-		padding: 1rem 2rem;
+		padding: 3rem 2rem;
+		display: inline-block;
+		transition: all .25s;
+
+		&:hover {
+			background-color: $color-white-primary;
+			color: $color-blue-primary;
+		}
 	}
 }

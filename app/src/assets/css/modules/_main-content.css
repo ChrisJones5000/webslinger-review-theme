@@ -1,0 +1,7 @@
+.main-content {
+
+	&--home {
+		background-color: $color-gray-light;
+		padding-top: 7rem;
+	}
+}
