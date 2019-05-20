@@ -6,4 +6,40 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	&__left {
+
+	}
+
+	&__right {
+
+	}
+
+	&__social {
+		list-style: none;
+	}
+
+	&__social-item {
+
+	}
+
+	&__social-link {
+
+	}
+
+	&__menu {
+
+	}
+
+	&__menu-item {
+
+	}
+
+	&__menu-link {
+
+	}
+
+	&__affiliate-disclaimer {
+
+	}
 }

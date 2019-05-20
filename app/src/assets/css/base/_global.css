@@ -27,3 +27,13 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+a {
+	text-decoration: none;
+	color: $color-red-primary;
+	transition: color .25s;
+
+	&:hover {
+		color: $color-brown-primary;
+	}
+}

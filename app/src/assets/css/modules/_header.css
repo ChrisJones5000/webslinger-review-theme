@@ -34,8 +34,8 @@
 		transition: all .25s;
 
 		&:hover {
-			background-color: $color-white-primary;
-			color: $color-blue-primary;
+			background-color: $color-brown-primary;
+			color: $color-white-primary;
 		}
 	}
 }

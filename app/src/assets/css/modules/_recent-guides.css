@@ -1,0 +1,124 @@
+.recent-guides {
+	background-color: #FFF;
+	padding: 4rem 2rem;
+
+	&::after {
+		content: '';
+		margin-top: 4rem;
+
+		@mixin section-divider-line;
+	}
+
+	&__category {
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__category-name {
+		font-size: 2.4rem;
+		letter-spacing: 2px;
+		background-color: $color-brown-primary;
+		color: #FFF;
+		padding: 0 2rem;
+		line-height: 2;
+		margin-left: -2rem;
+		font-weight: 300;
+	}
+
+	&__category-link {
+		color: $color-red-primary;
+
+		&:hover {
+			color: $color-brown-primary;
+		}
+		
+		&:hover > span {
+			transform: translateX(5px);
+		}
+
+		& span {
+			font-size: 2rem;
+			display: inline-block;
+			transition: all .25s;
+		}
+	} 
+
+	&__posts {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	&__primary-post {
+		margin-right: 3rem;
+		flex: 0 0 50%;
+	}
+
+	&__primary-post-img {
+
+	}
+
+	&__primary-post-title {
+		font-size: 3.5rem;
+
+		& > a {
+			color: $color-black-primary;
+			transition: color .25s;
+
+			&:hover {
+				color: $color-red-primary;
+			}
+		}
+	}
+
+	&__primary-post-recommend {
+		background-color: $color-gray-light;
+		color: $color-red-primary;
+		margin-left: -2rem;
+		padding: .5rem 2rem;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+	&__primary-post-excerpt {
+		margin-top: 1.5rem;
+	}
+
+	&__primary-post-more {
+		display: block;
+		margin-top: 1rem;		
+	}
+
+	&__secondary-posts {
+		flex: 0 0 45%;
+	}
+
+	&__secondary-post {
+		background-color: $color-gray-light;
+		padding: 2rem 1.5rem;
+		border-bottom: 1px solid #FFF;
+		transition: all .25s;
+
+		&:hover {
+			margin-left: -1.5rem;
+		}
+	}
+
+	&__secondary-post-title {
+		font-size: 2.4rem;
+
+		& > a {
+			color: $color-black-primary;
+			transition: color .25s;
+
+			&:hover {
+				color: $color-red-primary;
+			}
+		}
+	}
+
+	&__secondary-post-recommend {
+		font-size: 1.8rem;
+	}
+}

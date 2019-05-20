@@ -12,36 +12,57 @@
 	}
 
 	&__label {
+		color: #FFF;
 		font-size: 3.5rem;
-		background-color: $color-peach-primary;
-		padding-left: 2rem;
+		background-color: $color-brown-primary;
+		padding: 1rem 0 1rem 2rem;
 		max-width: 30rem;
 		letter-spacing: 2px;
 		font-weight: 300;
 		text-transform: uppercase;
 		position: relative;
-		top: -7rem;
+		top: -8rem;
 		left: -2rem;
 		margin-bottom: -5rem;
 	}
 
 	&__title {
-		font-size: 4rem;
+		font-size: 6rem;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+
+		& > a {
+			color: $color-black-primary;
+			transition: color .25s;
+
+			&:hover {
+				color: $color-red-primary;
+			}
+		}
 	}
 
 	&__excerpt {
-
+		margin-bottom: 2rem;
 	}
 
 	&__meta {
-
+		text-align: right;
 	}
 
 	&__category-text {
-
+		font-size: 1.8rem;
+		background-color: $color-gray-light;
+		display: inline-block;
+		padding: .7rem 1.5rem;
 	}
 
 	&__category-link {
+		text-transform: uppercase;
+		color: $color-red-primary;
+		transition: color .25s;
 
+		&:hover {
+			color: $color-brown-primary;
+		}
 	}
 }

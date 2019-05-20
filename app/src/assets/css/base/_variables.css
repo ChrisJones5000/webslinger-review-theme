@@ -10,8 +10,12 @@ $heading-font-family: 'Playfair Display', serif;
  */
 
 $color-black-primary: #1E1E24;
-$color-red-primary: #92140C;
-$color-white-primary: #FFF8F0;
-$color-peach-primary: #FFCF99;
+$color-red-primary: #FF1053;
+$color-white-primary: #FFF;
+$color-brown-primary: #BE9D53;
+$color-peach-dark: #D8A061;
+$color-peach-darker: #B27735;
 $color-blue-primary: #111D4A;
+$color-blue-light: #66C7F4;
+$color-green-light: #068D9D;
 $color-gray-light: #EFEFEF;

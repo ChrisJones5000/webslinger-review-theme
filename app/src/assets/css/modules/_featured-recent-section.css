@@ -2,4 +2,10 @@
 	display: flex;
 	flex-flow: row wrap;
 	background-color: #FFF;
+
+	&::after {
+		content: '';
+		margin-left: 2rem;
+		@mixin section-divider-line;
+	}
 }
