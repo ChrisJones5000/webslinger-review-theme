@@ -1,0 +1,32 @@
+.product-display {
+	text-align: center;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		margin-right: 3rem;
+	}
+
+	&__item-img {
+
+	}
+
+	&__item-title {
+
+	}
+
+	&__item-brand {
+
+	}
+
+	&__item-description {
+
+	}
+
+	&__item-btn {
+
+	}
+}

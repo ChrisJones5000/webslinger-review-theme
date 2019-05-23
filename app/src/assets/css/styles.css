@@ -9,4 +9,7 @@
 @import 'modules/_featured-post';
 @import 'modules/_recent-articles';
 @import 'modules/_recent-guides';
+@import 'modules/_hero';
+@import 'modules/_product-display';
+@import 'modules/_btn';
 @import 'modules/_footer';

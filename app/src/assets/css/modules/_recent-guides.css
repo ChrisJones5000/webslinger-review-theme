@@ -55,8 +55,68 @@
 		flex: 0 0 50%;
 	}
 
-	&__primary-post-img {
+	&__primary-post-img-link {
+		position: relative;
+		display: inline-block;
 
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,.7);
+			height: 100%;
+			width: 0;
+			transition: all .25s;
+		}
+
+		&:hover.recent-guides__primary-post-img-link::before {
+			content: '';
+			width: 100%;
+		}
+
+		&:hover .recent-guides__primary-post-img-deco {
+			opacity: 1;
+		}
+	}
+
+	&__primary-post-img-deco {
+		height: 10rem;
+		width: 10rem;
+		border: 2px solid $color-brown-primary;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		transition: all .25s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all .25s;
+
+		&:hover {
+			background-color: $color-brown-primary;
+		}
+
+		&:hover .recent-guides__primary-post-img-deco-text {
+			color: #FFF;
+		}
+	}
+
+	&__primary-post-img-deco-text {
+		color: $color-brown-primary;
+		font-size: 2rem;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		display: inline-block;
+		transform: rotate(-45deg);
+		transition: color .25s;
+	}
+
+	&__primary-post-img {
+		display: block;
 	}
 
 	&__primary-post-title {

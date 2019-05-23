@@ -16,8 +16,8 @@
 		font-size: 3.5rem;
 		background-color: $color-brown-primary;
 		padding: 1rem 0 1rem 2rem;
-		max-width: 30rem;
 		letter-spacing: 2px;
+		max-width: 90%;
 		font-weight: 300;
 		text-transform: uppercase;
 		position: relative;

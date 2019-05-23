@@ -1,0 +1,15 @@
+.hero {
+
+	&--inner {
+		background-color: $color-gray-light;
+		padding-top: 7rem;
+		padding-bottom: 23rem;
+	}
+
+	&__headline {
+		font-size: 4rem;
+		margin: 0;
+		text-align: center;
+		color: $color-brown-primary;
+	}
+}

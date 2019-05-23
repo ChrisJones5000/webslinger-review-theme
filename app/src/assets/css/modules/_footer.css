@@ -1,45 +1,71 @@
 .footer {
 	background-color: $color-blue-primary;
 	color: #FFF;
+	padding: 3rem 0;
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		flex-flow: row wrap;
 	}
 
 	&__left {
-
+		flex: 0 1 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	&__right {
+		flex: 0 1 50%;
+	}
 
+	&__logo {
+		width: 25rem;
+		margin-bottom: 2rem;
+		display: inline-block;
 	}
 
 	&__social {
 		list-style: none;
+		margin-bottom: 1.5rem;
 	}
 
 	&__social-item {
-
+		display: inline-block;
+		margin-right: 1.5rem;
+		font-size: 2rem;
 	}
 
 	&__social-link {
-
+		color: #FFF;
 	}
 
 	&__menu {
-
+		list-style: none;
 	}
 
 	&__menu-item {
-
+		display: inline-block;
+		margin-right: 2rem;
 	}
 
 	&__menu-link {
-
+		color: #FFF;
 	}
 
 	&__affiliate-disclaimer {
+		color: $color-blue-light;
+	}
 
+	&__bottom {
+		margin-top: 2rem;
+	}
+
+	&__copyright {
+		color: $color-blue-light;
+		font-size: 1.4rem;
+		text-align: center;
 	}
 }
