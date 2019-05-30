@@ -1,0 +1,11 @@
+.layout {
+
+	&--sidebar {
+		position: relative;
+		display: flex;
+	}
+
+	&__main {
+		flex: 3;
+	}
+}

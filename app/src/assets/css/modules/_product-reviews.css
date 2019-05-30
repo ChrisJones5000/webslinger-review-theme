@@ -1,0 +1,165 @@
+.product-reviews {
+	background-color: $color-gray-light;
+	padding-top: 5rem;
+
+	.product-reviews__container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	&__product {
+		background-color: #FFF;
+		padding: 3rem;
+		margin-top: 7rem;
+	}
+
+	&__product-img {
+		margin-bottom: 2rem;
+
+		& img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__product-title {
+		font-size: 2.6rem;
+		text-align: center;
+		/*margin-bottom: 1.5rem;*/
+	}
+
+	&__product-award {
+		font-size: 1.8rem;
+		font-weight: 300;
+		color: #FFF;
+		background-color: $color-brown-primary;
+		padding: .5rem 3rem;
+		display: inline-block;
+		margin-left: 50%;
+		margin-bottom: 2.5rem;
+		border-radius: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		transform: translateX(-50%);
+	}
+
+	&__product-review {
+		margin-bottom: 5rem;
+		
+		& p {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__product-details {
+		background-color: $color-blue-primary;
+		color: #FFF;
+		padding: 2rem;
+		margin-bottom: 5rem;
+		box-shadow: 5px 5px 20px 2px rgba(0,0,0,.2);
+		display: flex;
+	}
+
+	&__product-features {
+		margin-right: 3rem;
+		flex: 1;
+	}
+
+	&__product-features-title {
+		margin-bottom: 2rem;
+	}
+
+	&__product-features-list {
+		list-style-type: none;
+
+		& > li {
+			padding-bottom: .5rem;
+		}
+
+		& i {
+			color: $color-brown-primary;
+			font-size: 1.4rem;
+			margin-right: 1.5rem;
+		}
+	}
+
+	&__product-specifications {
+		flex: 1;
+	}
+
+	&__product-specifications-title {
+		margin-bottom: 1rem;
+	}
+
+	&__product-specifications-table {
+		width: 100%;
+
+		& th {
+			text-align: left;
+			border-bottom: 1px dotted $color-brown-primary;
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+		}
+
+		& td {
+			text-align: right;
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+			border-bottom: 1px dotted $color-brown-primary;
+		}
+	}
+
+	&__product-pros-cons {
+		margin-bottom: 5rem;
+		display: flex;
+	}
+
+	&__product-pros-cons-title {
+		font-size: 2rem;
+		text-align: center;
+	}	
+
+	&__product-pros-cons-list {
+		list-style-type: none;
+		line-height: 1.5;
+		
+		& li {
+			margin-bottom: 1rem;
+			display: flex;
+			align-items: center;
+		}
+
+		& i {
+			margin-right: 2rem;
+			font-size: 2.6rem;
+
+		}
+	}
+
+	&__product-pros {
+		margin-right: 3rem;
+	}
+
+	&__product-pros-list {
+		
+		& i {
+			color: $color-green-light;
+		}
+	}
+
+	&__product-cons {
+
+	}
+
+	&__product-cons-list {
+		
+		& i {
+			color: $color-red-primary;
+		}
+	}
+
+	&__product-btn-container {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+}

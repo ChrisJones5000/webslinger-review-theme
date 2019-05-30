@@ -10,6 +10,15 @@
 @import 'modules/_recent-articles';
 @import 'modules/_recent-guides';
 @import 'modules/_hero';
+@import 'modules/_review';
+@import 'modules/_buying-guide';
+@import 'modules/_product-reviews';
+@import 'modules/_related-posts';
+@import 'modules/_layout';
+@import 'modules/_sidebar';
+@import 'modules/_toc';
+@import 'modules/_cards';
+@import 'modules/_card';
 @import 'modules/_product-display';
 @import 'modules/_btn';
 @import 'modules/_footer';

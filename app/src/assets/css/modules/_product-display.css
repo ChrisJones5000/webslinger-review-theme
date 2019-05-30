@@ -1,32 +1,9 @@
 .product-display {
-	text-align: center;
+	background-color: $color-gray-light;
+	padding-top: 0;
 
-	&__container {
-		display: flex;
-		justify-content: center;
-	}
-
-	&__item {
-		margin-right: 3rem;
-	}
-
-	&__item-img {
-
-	}
-
-	&__item-title {
-
-	}
-
-	&__item-brand {
-
-	}
-
-	&__item-description {
-
-	}
-
-	&__item-btn {
-
+	&__btn-container {
+		text-align: center;
+		padding: 2rem 0 4rem;
 	}
 }

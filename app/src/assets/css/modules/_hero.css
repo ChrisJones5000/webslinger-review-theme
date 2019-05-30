@@ -2,14 +2,30 @@
 
 	&--inner {
 		background-color: $color-gray-light;
-		padding-top: 7rem;
-		padding-bottom: 23rem;
+		padding-top: 4rem;
+		text-align: center;
 	}
 
 	&__headline {
-		font-size: 4rem;
-		margin: 0;
+		font-size: 5rem;
+		margin-bottom: -13rem;
 		text-align: center;
 		color: $color-brown-primary;
+
+		&::after {
+			content: '';
+			height: 2px;
+			width: 10rem;
+			background-color: $color-brown-primary;
+			display: block;
+			margin: 1.5rem auto 0;
+		}
+	}
+
+	&__img {
+		display: inline-block;
+		position: relative;
+		top: 17rem;
+		box-shadow: 5px 5px 2rem 2px rgba(0,0,0,.15);
 	}
 }
