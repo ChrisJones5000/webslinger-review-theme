@@ -1,0 +1,18 @@
+.contact {
+	margin-top: 20rem;
+	margin-bottom: 5rem;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+
+	&__text-column {
+		flex: 0 0 48%;
+	}
+
+	&__form-column {
+		flex: 0 0 48%;
+	}
+}

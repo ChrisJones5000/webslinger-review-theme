@@ -1,0 +1,44 @@
+.form {
+	max-width: 80rem;
+	margin: 0 auto;
+	
+	&__row {
+		display: flex;
+		margin-bottom: 2rem;
+		
+		& input {
+			width: 100%;
+			border: none;
+			background-color: $color-gray-light;
+			padding: 1rem 2rem;	
+			margin-right: 2rem;
+
+			&:last-child {
+				margin-right: 0;
+			}		
+		}
+	}
+
+	& textarea {
+		width: 100%;
+		background-color: $color-gray-light;
+		border: none;
+				padding: 1rem 2rem;
+	}
+
+	& input[type=submit] {
+		background-color: $color-blue-primary;
+		color: #FFF;
+		border: 2px solid $color-blue-primary;
+		padding: 1rem 2.5rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		cursor: pointer;
+		transition: all .25s;
+
+		&:hover {
+			background-color: transparent;
+			color: $color-blue-primary;
+		}
+	}
+}

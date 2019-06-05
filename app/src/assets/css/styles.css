@@ -13,6 +13,10 @@
 @import 'modules/_review';
 @import 'modules/_buying-guide';
 @import 'modules/_product-reviews';
+@import 'modules/_blog-post';
+@import 'modules/_contact';
+@import 'modules/_form';
+@import 'modules/_post-grid';
 @import 'modules/_related-posts';
 @import 'modules/_layout';
 @import 'modules/_sidebar';
