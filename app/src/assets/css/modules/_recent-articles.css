@@ -1,7 +1,20 @@
 .recent-articles {
-	padding: 0 2rem 4rem 0;
+	margin-top: 2rem;
+	padding: 0 2rem 4rem 2rem;
 	position: relative;
 	flex: 1 1 35rem;
+
+	@mixin atSmall--large {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	@mixin atMedium--large {
+		padding-left: 0;
+		margin-top: 0;
+		display: block;
+	}
 
 	&__title-container {
 		display: flex;
@@ -22,7 +35,13 @@
 
 	&__all-link {
 		color: $color-red-primary;
+		position: relative;
+		left: -3rem;
 		transition: color .25s;
+
+		@mixin atMedium--large {
+			left: 0;
+		}
 
 		&:hover {
 			color: $color-brown-primary;
@@ -32,10 +51,20 @@
 	&__article {
 		margin-top: 3rem;
 		display: flex;
+
+		@mixin atSmall--large {
+			margin-right: 2rem;
+			flex: 1 1 45%;
+		}
+
+		@mixin atMedium--large {
+			flex: 1 0 auto;
+		}
 	}
 
 	&__article-img {
 		width: 18rem;
+		display: block;
 		object-fit: contain;
 		align-self: flex-start;
 	}

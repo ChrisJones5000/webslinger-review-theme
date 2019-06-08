@@ -1,9 +1,12 @@
 .featured-post {
 	position: relative;
-	margin-right: 3rem;
 	flex: 1 1 62rem;
 	padding-left: 2rem;
 	padding-bottom: 4rem;
+
+	@mixin atMedium--large {
+		margin-right: 3rem;
+	}
 
 	&__img {
 		position: relative;
@@ -13,23 +16,35 @@
 
 	&__label {
 		color: #FFF;
-		font-size: 3.5rem;
+		font-size: 3rem;
 		background-color: $color-brown-primary;
-		padding: 1rem 0 1rem 2rem;
+		padding: .5rem 0 .5rem 2rem;
 		letter-spacing: 2px;
-		max-width: 90%;
+		max-width: 80%;
 		font-weight: 300;
 		text-transform: uppercase;
 		position: relative;
 		top: -8rem;
 		left: -2rem;
 		margin-bottom: -5rem;
+
+		@mixin atSmall {
+			font-size: 3.5rem;
+			padding: 1rem 0 1rem 2rem;
+			max-width: 90%;
+		}
+
 	}
 
 	&__title {
-		font-size: 6rem;
+		font-size: 4rem;
 		line-height: 1.2;
 		margin-bottom: 1.5rem;
+		padding-right: 2rem;
+
+		@mixin atSmall--large {
+			font-size: 6rem;
+		}
 
 		& > a {
 			color: $color-black-primary;
@@ -43,6 +58,7 @@
 
 	&__excerpt {
 		margin-bottom: 2rem;
+		padding-right: 2rem;
 	}
 
 	&__meta {

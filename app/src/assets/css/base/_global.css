@@ -8,7 +8,23 @@
 
 html {
 	/**Font Size = Desired font size (10px)/current font size (16px)**/
-	font-size: 62.5%;
+	font-size: 52%;
+
+	@mixin atSmall {
+		font-size: 54%;
+	}
+
+	@mixin atSmall--large {
+		font-size: 56%;
+	}
+
+	@mixin atMedium {
+		font-size: 58%;
+	}
+
+	@mixin atLarge {
+		font-size: 62.5%;
+	}
 }
 
 body {

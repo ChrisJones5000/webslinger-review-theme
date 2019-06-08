@@ -1,4 +1,10 @@
 .layout {
+	margin-top: 20rem;
+	margin-bottom: 5rem;
+
+	&--basic {
+		margin-top: 5rem;
+	}
 
 	&--sidebar {
 		position: relative;

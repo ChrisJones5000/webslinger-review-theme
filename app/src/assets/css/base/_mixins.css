@@ -5,3 +5,33 @@
 	width: 100%;
 	height: 1px;
 }
+
+@define-mixin atSmall {
+	@media (min-width: 400px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atSmall--large {
+	@media (min-width: 600px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium--large {
+	@media (min-width: 980px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}

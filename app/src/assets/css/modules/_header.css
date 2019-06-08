@@ -1,12 +1,16 @@
 .header {
 
 	&__logo {
-		/*max-width: 25rem;*/
 		margin: 1.5rem auto;
 
 		&-image {
 			display: block;
 			max-width: 25rem;
+			margin: 0 auto;
+
+			@mixin atMedium {
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -20,6 +24,11 @@
 
 	&__nav-item {
 		display: inline-block;
+		width: 100%;
+
+		@mixin atMedium {
+			width: auto;
+		}
 	}
 
 	&__nav-icon {

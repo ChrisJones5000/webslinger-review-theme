@@ -7,7 +7,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		flex-flow: row wrap;
+		flex-direction: column;
+
+		@mixin atMedium {
+			flex-flow: row wrap;
+		}
 	}
 
 	&__left {
@@ -44,6 +48,11 @@
 
 	&__menu {
 		list-style: none;
+		margin-bottom: 1.5rem;
+
+		@mixin atMedium {
+			margin-bottom: 0;
+		}
 	}
 
 	&__menu-item {
