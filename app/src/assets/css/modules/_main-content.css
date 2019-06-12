@@ -1,4 +1,5 @@
 .main-content {
+	position: relative;
 
 	&--home {
 		background-color: $color-gray-light;

@@ -1,5 +1,13 @@
 .hero {
 
+	&__container {
+		padding: 0;
+
+		@mixin atMedium {
+			padding: 0 20px;
+		}		
+	}
+
 	&--inner {
 		background-color: $color-gray-light;
 		padding-top: 4rem;
@@ -13,14 +21,21 @@
 
 	&--title-bottom {
 		background-color: $color-gray-light;
-		padding-top: 5rem;
 		max-height: 43rem;
 
+		@mixin atMedium {
+			padding-top: 5rem;
+		}
+
 		& .hero__title {
-			top: -7rem;
+			top: 0;
 			border-top: 5px solid $color-brown-primary;
 			background-image: linear-gradient(to bottom, $color-gray-light, #FFF 45%);
 			min-height: 10rem;
+
+			@mixin atSmall {
+				top: -7rem;
+			}
 		}
 	}
 
@@ -81,7 +96,7 @@
 	}
 
 	&__img {
-		display: inline-block;
+		display: block;
 		position: relative;
 		top: 17rem;
 		box-shadow: 5px 5px 2rem 2px rgba(0,0,0,.15);

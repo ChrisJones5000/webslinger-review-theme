@@ -8,11 +8,7 @@
 
 html {
 	/**Font Size = Desired font size (10px)/current font size (16px)**/
-	font-size: 52%;
-
-	@mixin atSmall {
-		font-size: 54%;
-	}
+	font-size: 54%;
 
 	@mixin atSmall--large {
 		font-size: 56%;

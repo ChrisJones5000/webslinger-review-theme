@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="temp/css/styles.css">
 	</head>
 	<body>
-		<header class="header">
+		<header id="top-anchor" class="header">
 			<div class="header__logo">
 				<div class="container">
 					<img src="src/assets/images/placeholder-500x200.jpg" alt="alt text" class="header__logo-image">
@@ -20,6 +20,9 @@
 			</div>
 			<nav class="header__nav">
 				<div class="container">
+					<div class="header__nav-toggle-container">
+						<a href="#" class="header__nav-toggle-link"><span class="header__nav-toggle-icon"></span></a>
+					</div>
 					<ul class="header__nav-list">
 						<li class="header__nav-item"><a href="#" class="header__nav-item-link"><i class="fas fa-home header__nav-icon"></i>Home</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-item-link">Category 1</a></li>
@@ -207,7 +210,8 @@
 						</div>						
 					</div>
 				</section>
-			</div>			
+			</div>
+			<a href="#top-anchor" class="back-to-top-btn"><i class="fas fa-arrow-up"></i></a>
 		</main>
 		<footer class="footer">
 			<div class="container footer__container">

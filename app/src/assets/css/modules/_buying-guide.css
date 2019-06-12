@@ -3,6 +3,7 @@
 
 	& h2 {
 		font-size: 3rem;
+		line-height: 1.5;
 	}
 
 	& h3 {
@@ -11,5 +12,9 @@
 
 	& p {
 		margin-bottom: 1rem;
+	}
+
+	&__content h2 {
+		margin: 2rem 0;
 	}
 }

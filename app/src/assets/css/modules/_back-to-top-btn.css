@@ -1,0 +1,16 @@
+.back-to-top-btn {
+	font-size: 2.5rem;
+	background-color: $color-blue-primary;
+	color: $color-brown-primary;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	position: fixed;
+	right: -8rem;
+	bottom: 5rem;
+	transition: all .25s;
+
+	&--active {
+		right: 3rem;
+	}
+}

@@ -1,14 +1,25 @@
 .layout {
-	margin-top: 20rem;
+	margin-top: 5rem;
 	margin-bottom: 5rem;
+
+	@mixin atSmall--medium {
+		margin-top: 15rem;
+	}
+
+	@mixin atMedium--small {
+		margin-top: 20rem;
+	}
 
 	&--basic {
 		margin-top: 5rem;
 	}
 
 	&--sidebar {
-		position: relative;
-		display: flex;
+		position: relative;		
+
+		@mixin atSmall {
+			display: flex;
+		}
 	}
 
 	&__main {

@@ -19,7 +19,19 @@
 	}
 
 	&__nav-list {
-		
+		max-height: 0;
+		visibility: hidden;
+		transition: all .25s;
+
+		@mixin atMedium {
+			max-height: 50rem;
+			visibility: visible;
+		}
+
+		&--is-visible {
+			max-height: 50rem;
+			visibility: visible;
+		}
 	}
 
 	&__nav-item {
@@ -45,6 +57,52 @@
 		&:hover {
 			background-color: $color-brown-primary;
 			color: $color-white-primary;
+		}
+	}
+
+	&__nav-toggle-container {
+		text-align: right;
+		height: 5rem;
+
+		@mixin atMedium {
+			display: none;
+		}
+	}
+
+	&__nav-toggle-link {
+		display: inline-block;
+		height: 100%;
+		position: relative;
+	}
+
+	&__nav-toggle-icon {
+		height: 3px;
+		width: 3rem;
+		background-color: #FFF;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50% -50%);
+		right: 0;
+
+		&::before,
+		&::after {
+			content: '';
+			height: 3px;
+			width: 3rem;
+			display: inline-block;
+			background-color: #FFF;
+			position: absolute;
+		}
+
+		&::before {
+			top: -1rem;
+			right: 0;
+		}
+
+		&::after {
+			right: 0;
+			top: 1rem;
 		}
 	}
 }

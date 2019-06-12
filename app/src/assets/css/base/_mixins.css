@@ -12,8 +12,20 @@
 	}
 }
 
+@define-mixin atSmall--medium {
+	@media (min-width: 500px) {
+		@mixin-content;
+	}
+}
+
 @define-mixin atSmall--large {
 	@media (min-width: 600px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium--small {
+	@media (min-width: 700px) {
 		@mixin-content;
 	}
 }
